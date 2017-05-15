@@ -35,7 +35,7 @@
 
 		void vert(inout appdata_full v, out Input o){
 
-			v.vertex.x += sin(_Time.y * _Speed + v.vertex.y * _Freq) + _Scale; 
+			v.vertex.x += sin(_Time.y * _Speed + v.vertex.y * _Freq) * _Scale; 
 			o.uv_MainTex = v.texcoord;			
 		}
 
